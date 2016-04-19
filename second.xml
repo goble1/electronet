@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:background="#9eff8b"
+        android:layout_marginRight="63dp"
+        android:layout_marginEnd="63dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/textViewTime"
+        android:layout_alignEnd="@+id/textViewTime" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:background="#fc8b8b"
+        android:layout_alignTop="@+id/btnStart"
+        android:layout_alignLeft="@+id/textViewTime"
+        android:layout_alignStart="@+id/textViewTime"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTime"
+        android:textSize="50sp"
+        android:text="03:00"
+        android:layout_alignBaseline="@+id/match_2_score"
+        android:layout_alignBottom="@+id/match_2_score"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#9facf2"
+        android:text="Team 1 Match"
+        android:layout_toLeftOf="@+id/btnStart"
+        android:layout_toStartOf="@+id/btnStart"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:background="#f29fa5"
+        android:text="Team 2 Match"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnStop"
+        android:layout_toEndOf="@+id/btnStop"
+        android:gravity="center_horizontal" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:id="@+id/match_1_plus"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:id="@+id/match_2_plus"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-1"
+        android:id="@+id/match_1_minus"
+        android:layout_below="@+id/match_1_plus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-1"
+        android:id="@+id/match_2_minus"
+        android:layout_below="@+id/match_2_plus"
+        android:layout_alignLeft="@+id/match_2_plus"
+        android:layout_alignStart="@+id/match_2_plus" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_1_plus"
+        android:background="#9facf2"
+        android:text="Team 1 Game"
+        android:gravity="center_horizontal"
+        android:layout_alignBottom="@+id/btnStart"
+        android:layout_toLeftOf="@+id/btnStart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:id="@+id/button5"
+        android:layout_below="@+id/game_1_plus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-1"
+        android:id="@+id/game_1_minus"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button5"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:background="#f29fa5"
+        android:text="Team 2 Game"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/button5"
+        android:layout_toRightOf="@+id/btnStop"
+        android:layout_alignRight="@+id/game_2_plus"
+        android:layout_alignEnd="@+id/game_2_plus" />
+    C:\
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:id="@+id/game_2_plus"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText4"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-1"
+        android:id="@+id/game_2_minus"
+        android:layout_below="@+id/game_2_plus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/match_1_score"
+        android:textSize="75sp"
+        android:layout_toRightOf="@+id/match_1_plus"
+        android:layout_below="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignBottom="@+id/match_1_minus"
+        android:gravity="center_vertical|center_horizontal"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/match_2_score"
+        android:textSize="75sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textStyle="bold"
+        android:layout_below="@+id/editText2"
+        android:layout_toLeftOf="@+id/match_2_plus"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/game_2_score"
+        android:textSize="75sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/game_2_plus"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_toLeftOf="@+id/game_2_plus"
+        android:layout_toStartOf="@+id/game_2_plus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/game_1_score"
+        android:textSize="75sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/game_1_minus"
+        android:layout_toRightOf="@+id/button5"
+        android:layout_alignRight="@+id/game_1_plus"
+        android:layout_alignEnd="@+id/game_1_plus" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Time"
+        android:id="@+id/settimebtn"
+        android:background="#f8eb7a"
+        android:layout_alignBottom="@+id/game_1_score"
+        android:layout_alignLeft="@+id/settimemin"
+        android:layout_alignStart="@+id/settimemin"
+        android:layout_alignEnd="@+id/settimesec" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="2"
+        android:id="@+id/settimemin"
+        android:hint="MM"
+        android:layout_above="@+id/settimebtn"
+        android:layout_alignRight="@+id/btnStart"
+        android:layout_alignEnd="@+id/btnStart"
+        android:layout_alignStart="@+id/textViewTime" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="2"
+        android:id="@+id/settimesec"
+        android:hint="SS"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_above="@+id/settimebtn"
+        android:layout_toStartOf="@+id/game_2_score"
+        android:layout_alignTop="@+id/settimemin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:id="@+id/textView"
+        android:layout_below="@+id/btnStart"
+        android:layout_toRightOf="@+id/settimemin"
+        android:layout_toEndOf="@+id/settimemin"
+        android:layout_alignBottom="@+id/settimemin"
+        android:textSize="40sp" />
+
+
+</RelativeLayout>
